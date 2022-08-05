@@ -3,7 +3,6 @@ layout: post
 title: Multiples archivos en javascript
 tags: [javascript]
 ---
-
 Leer un conjunto de archivos en formato json, cada uno de estos archivos contienen un parámetro con el nombre de una imagen, en este caso un png. La idea principal es que al terminar de cargar todos los archivos invoque una función predefinida (callback).
 
 ## Datos iniciales 
@@ -35,14 +34,13 @@ Leer un conjunto de archivos en formato json, cada uno de estos archivos contien
 ```
 
 ## Solución 
+Originalmente pensé que cada vez que terminara de cargar un archivo, ya sea el json o el png hacer un callback, pero a medida que los archivos aumentaban el proceso se ponia mas complejo y engorroso, por lo tanto la unica opcion que encontre es hacer estas llamadas asíncronas a través de promise, estos fueron diseñados para saber si un proceso asíncrono finalizo con exito o con error.
 
-Originalmente pense que cada vez que terminara de cargar un archivo, ya sea el json o el png hacer un callback, pero a medida que los archivos aumentaban el proceso se ponia mas complejo y engorrozo, por lo tanto la unica opcion que encontre es hacer estas llamadas asyncronas a traves de promise, estos fueron disenados para saber si un proceso asyncrono finalizo con exito o con error.
-
-Para la solucion implemente 4 metodos:
- - Metodo para leer un archivo json
- - Metodo para leer una image
- - Metodo que relaciona el json con su imagen
- - Metodo que lee la lista completa de archivos
+Para la solución implemente 4 métodos:
+ - Método para leer un archivo json.
+ - Método para leer una imagen.
+ - Método que relaciona el json con su imagen.
+ - Método que lee la lista completa de archivos.
 
 ```javascript
 readAll(callback) {
