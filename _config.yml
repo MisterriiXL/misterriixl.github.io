@@ -1,11 +1,11 @@
 # Setup
-title: Simple Page Blog
+title: Simple Blog Page
 description: compartir cosas que hago en mi tiempo libre
 url: https://github.com/MisterriiXL
-avatar: /avatar.jpeg
+avatar: /avatar.jpg
 paginate: 5
 permalink: pretty
-cover_image: /bg.jpeg
+cover_image: /bg.jpg
 
 # Gems
 plugins:
