@@ -45,7 +45,7 @@ sass:
 google_analytics: G-1L7EXDLQ58
 
 # Replace this value and uncomment to enable Disqus
-# disqus: xxxxxx
+disqus: https-misterriixl-github-io
 
 # Specify the author for blog posts
 author:

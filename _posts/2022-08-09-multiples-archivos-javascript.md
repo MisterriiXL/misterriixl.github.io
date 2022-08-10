@@ -4,6 +4,7 @@ title: Múltiples archivos en JavaScript
 tags:
 - javascript
 date: 2022-08-09 23:49 -0400
+comments: true
 ---
 Leer un conjunto de archivos en formato **json**, cada uno de estos archivos contienen un parámetro con el nombre de una imagen, en este caso un png. La idea es que al terminar de cargar todos los archivos invoque una función predefinida (callback).
 
